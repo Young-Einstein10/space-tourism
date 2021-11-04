@@ -1,0 +1,249 @@
+html {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url("./assets/home/background-home-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0 1.5rem;
+  min-height: 100vh;
+}
+
+header {
+  padding: 1.5rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.btn-hamburger {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  color: #d0d6f9;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 5.0625rem;
+  font-weight: 400;
+}
+
+.wrapper p:first-child {
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "Barlow Condensed";
+  margin-bottom: 1rem;
+}
+
+.wrapper p:last-child {
+  font-family: "Barlow";
+  line-height: 25px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.wrapper h1 {
+  font-family: "Bellefair";
+  line-height: 100px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 80px;
+}
+
+.explore-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.explore {
+  font-size: 20px;
+  letter-spacing: 1.25px;
+  line-height: 23px;
+  font-family: Bellefair;
+  text-align: center;
+  color: #0b0d17;
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside {
+  height: 100%;
+  width: 254px;
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(81.5485px);
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  line-height: 19px;
+  font-family: "Barlow Condensed";
+  font-weight: normal;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -254px;
+  padding: 33.95px 0 0 32px;
+  /* display: none; */
+  transition: right 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-close-wrapper {
+  text-align: right;
+  margin-bottom: 64.95px;
+  padding-right: 26.45px;
+}
+
+.btn-close {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+aside ul {
+  list-style: none;
+  font-weight: normal;
+}
+
+aside a {
+  text-decoration: none;
+  color: inherit;
+}
+
+aside li {
+  padding: 6px 0;
+}
+
+aside li:hover,
+aside li:active {
+  border-right: solid 4px #fff;
+}
+
+aside ul li span {
+  margin-right: 0.75rem;
+  font-weight: bold;
+}
+
+aside ul a:not(:last-child) li {
+  margin-bottom: 2rem;
+}
+
+/* TABLET STYLE */
+.menu-wrapper {
+  display: none;
+}
+/* TABLET STYLE */
+
+/* TABLET STYLES */
+@media screen and (min-width: 576px) {
+  body {
+    background-image: url("./assets/home/background-home-tablet.jpg");
+    padding: 0;
+  }
+
+  header {
+    padding: 0;
+    padding-left: 39px;
+    margin-bottom: 145px;
+  }
+
+  .menu-wrapper {
+    display: block;
+    height: 6rem;
+    margin-bottom: 106px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+    padding: 39px 48px;
+    margin-bottom: 0;
+  }
+
+  .menu-wrapper .menu {
+    display: flex;
+    list-style: none;
+    color: #fff;
+    font-family: "Barlow Condensed";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+  }
+
+  .menu .menu__item {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .menu .menu__item:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  .menu__item li {
+    padding-bottom: 37px;
+  }
+
+  .menu__item li:hover {
+    border-bottom: solid 4px #fff;
+  }
+
+  .btn-hamburger {
+    display: none;
+  }
+
+  main {
+    padding: 0 1rem;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .wrapper p:first-child {
+    margin-bottom: 1rem;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+  }
+
+  .wrapper h1 {
+    font-size: 150px;
+    line-height: 150px;
+  }
+
+  .wrapper p:last-child {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
